@@ -214,6 +214,12 @@ nav a:hover {
   gap: 18px;
 }
 
+@media (max-width: 768px) {
+  .roadmap-card {
+    padding: 24px 20px;
+  }
+}
+
 .roadmap-headline {
   text-align: left;
 }
@@ -241,6 +247,15 @@ nav a:hover {
   position: relative;
   width: 100%;
   min-height: 280px;
+}
+
+@media (max-width: 768px) {
+  .roadmap-graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 320px;
+  }
 }
 
 .roadmap-path-svg {
@@ -272,6 +287,13 @@ nav a:hover {
   transform: translate(-50%, 16px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .roadmap-node {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .roadmap-node.active {
@@ -307,6 +329,14 @@ nav a:hover {
   max-width: 120px;
   text-align: center;
   word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .roadmap-node .node-label {
+    text-align: center;
+    max-width: 100px;
+    font-size: 0.8rem;
+  }
 }
 
 .roadmap-node .node-badge {
@@ -373,6 +403,16 @@ nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .roadmap-graphic {
+    min-height: 320px;
+  }
+
+  .roadmap-node {
+    margin: 12px auto 0;
+  }
+}
+
 .section-intro {
   max-width: 720px;
 }
@@ -413,6 +453,13 @@ nav a:hover {
   margin-top: 28px;
 }
 
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
 .skill-card {
   padding: 22px;
   border-radius: 24px;
@@ -423,6 +470,13 @@ nav a:hover {
   font-weight: 600;
   text-align: center;
   border-left: 4px solid rgba(64, 214, 255, 0.35);
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
 }
 
 .project-card {
@@ -503,10 +557,38 @@ nav a:hover {
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
+@media (max-width: 768px) {
+  .modal-close {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    top: auto;
+    width: 48px;
+    height: 48px;
+    background: #00d4d4;
+    color: #05070e;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 212, 212, 0.35);
+    z-index: 1300;
+  }
+}
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
 .modal-close:hover {
   transform: scale(1.06);
   background: rgba(0, 212, 212, 0.12);
   color: #e6edf8;
+}
+
+@media (max-width: 768px) {
+  .modal-close:hover {
+    background: #00d4d4;
+    color: #05070e;
+    transform: scale(1.08);
+  }
 }
 
 .modal-content {
@@ -780,10 +862,6 @@ nav a:hover {
 
   .hero h1 {
     font-size: clamp(2.5rem, 9vw, 4rem);
-  }
-
-  .skill-grid {
-    grid-template-columns: 1fr;
   }
 
   .project-details h3 {
