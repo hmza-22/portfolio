@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Hamza | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">MH</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy fade-up">
+          <p class="eyebrow">Data Analyst Portfolio</p>
+          <h1>Mohammad Hamza</h1>
+          <p class="hero-title">Aspiring Data Analyst</p>
+          <p class="hero-subtitle">Turning raw data into business decisions</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-visual fade-up delay-1">
+          <div class="visual-card roadmap-card" id="heroChart">
+            <div class="roadmap-headline">
+              <h2>My Learning Journey</h2>
+              <p class="roadmap-subtitle">Roadmap to Data Science</p>
+            </div>
+            <div class="roadmap-inner">
+              <div class="roadmap-graphic">
+                <svg class="roadmap-path-svg" viewBox="0 0 700 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#00d4d4" />
+                      <stop offset="100%" stop-color="#7c3aed" />
+                    </linearGradient>
+                    <filter id="glow">
+                      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00d4d4" flood-opacity="0.35" />
+                    </filter>
+                  </defs>
+                  <path class="roadmap-path" d="M40,220 C120,205 200,190 280,170 C360,150 440,130 520,110 C600,90 660,70 700,50" fill="none" />
+                </svg>
+
+                <div class="roadmap-node node-1">
+                  <div class="node-circle"><span>📊</span></div>
+                  <p class="node-label">Excel & Data Basics</p>
+                </div>
+                <div class="roadmap-node node-2">
+                  <div class="node-circle"><span>🗄️</span></div>
+                  <p class="node-label">SQL Fundamentals</p>
+                </div>
+                <div class="roadmap-node node-3">
+                  <div class="node-circle"><span>🐍</span></div>
+                  <p class="node-label">Python Programming</p>
+                </div>
+                <div class="roadmap-node node-4">
+                  <div class="node-circle"><span>🧹</span></div>
+                  <p class="node-label">Data Cleaning & EDA</p>
+                </div>
+                <div class="roadmap-node node-5 current">
+                  <div class="node-circle"><span>📈</span></div>
+                  <span class="node-badge">I AM HERE</span>
+                  <p class="node-label">Data Visualization</p>
+                </div>
+                <div class="roadmap-node node-6">
+                  <div class="node-circle"><span>🤖</span></div>
+                  <p class="node-label">Machine Learning</p>
+                </div>
+                <div class="roadmap-node node-7 finish">
+                  <div class="node-circle"><span>🏆</span></div>
+                  <p class="node-label">Data Scientist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-intro fade-up">
+          <p class="section-label">About</p>
+          <h2>Data Science Trainee at DUCAT India</h2>
+          <p>Skilled in Excel, Power BI, Python, and SQL. Passionate about finding insights in data and using them to shape smarter business decisions.</p>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <p class="section-label fade-up">Skills</p>
+        <div class="skill-grid">
+          <div class="skill-card fade-up">📊 Excel</div>
+          <div class="skill-card fade-up delay-1">📈 Power BI</div>
+          <div class="skill-card fade-up delay-2">🐍 Python</div>
+          <div class="skill-card fade-up delay-3">🗄️ SQL</div>
+          <div class="skill-card fade-up delay-4">🧹 Data Cleaning</div>
+          <div class="skill-card fade-up delay-5">📉 Data Visualization</div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-intro fade-up">
+          <p class="section-label">Projects</p>
+          <h2>Featured Work</h2>
+          <p>Real-world analysis delivered through a polished Power BI experience.</p>
+        </div>
+
+        <div class="project-card fade-up delay-1">
+          <div class="project-image">
+            <img src="assets/projects/powerbi-projects.png" alt="Global Retail Performance Dashboard" />
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">Excel</span>
+              <span class="project-tag">Data Cleaning</span>
+            </div>
+            <h3>Global Retail Performance Dashboard</h3>
+            <p>Cleaned 50,000+ row Superstore dataset in Excel, built an interactive Power BI dashboard tracking Sales, Profit & Quantity across 12 months and global markets.</p>
+            <button class="btn btn-outline project-open" type="button">
+              View Project <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal-overlay" id="projectModal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+          <div class="modal-content">
+            <img class="modal-image" src="assets/projects/powerbi-projects.png" alt="Global Retail Performance Dashboard" />
+            <div class="modal-copy">
+              <p class="modal-section-label">Project</p>
+              <h2 id="modalTitle">Global Retail Performance Dashboard</h2>
+              <div class="modal-tags">
+                <span>Power BI</span>
+                <span>Excel</span>
+                <span>Data Cleaning</span>
+              </div>
+              <section class="modal-section">
+                <p class="modal-section-label">Problem Statement</p>
+                <p>Store owners struggle to identify where they are making or losing money across thousands of rows of data.</p>
+              </section>
+              <section class="modal-section">
+                <p class="modal-section-label">What I Did</p>
+                <ul class="modal-list">
+                  <li>Cleaned and formatted 50,000+ row Superstore dataset in Excel</li>
+                  <li>Removed duplicates and fixed formatting errors</li>
+                  <li>Built interactive Power BI dashboard tracking Sales, Profit & Quantity over 12 months</li>
+                  <li>Engineered high-contrast KPI cards for instant insight</li>
+                </ul>
+              </section>
+              <section class="modal-section">
+                <p class="modal-section-label">Key Findings</p>
+                <ul class="modal-list">
+                  <li>USA: $286K+ in profit (top performing market)</li>
+                  <li>Turkey: $98K+ in loss (needs strategy review)</li>
+                  <li>Sales peak in December (holiday surge)</li>
+                  <li>Notable Q1 spike in March (clearance sales)</li>
+                </ul>
+              </section>
+              <a class="btn btn-outline btn-modal" href="https://www.linkedin.com/posts/mohammad-hamza-data-science_dataanalytics-powerbi-excel-ugcPost-7461518539921842177-gjed/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADrT-q8Bo5fpkYK1_FKNmEBB_rD-8DOfaAk" target="_blank" rel="noreferrer">
+                View on LinkedIn <span class="btn-arrow">↗</span>
+              </a>
+              <section class="modal-section">
+                <p class="modal-section-label">Data Preparation</p>
+                <p class="modal-caption">Raw dataset cleaned and structured in Microsoft Excel before importing to Power BI</p>
+                <img class="modal-image modal-image--small" src= "assets/projects/filtered-data.png" alt="Excel data preparation screenshot" />
+              </section>
+              <section class="modal-section">
+                <p class="modal-section-label">Raw Data Snapshot</p>
+                <p class="modal-caption">A glimpse of the original 50,000+ row Superstore dataset before cleaning — containing order details, customer info, shipping data, and financials across global markets.</p>
+                <img class="modal-image modal-image--small" src= "assets/projects/raw-data-pbi.png" alt="Raw data preview screenshot" />
+                <p class="modal-note">* Glimpse dataset contains 50,000+ records.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section contact" id="contact">
+        <div class="section-intro fade-up">
+          <p class="section-label">Contact</p>
+          <h2>Let's connect</h2>
+          <p>Available for internships and freelance data analysis engagements.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="mailto:hamzasaifi9650@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
